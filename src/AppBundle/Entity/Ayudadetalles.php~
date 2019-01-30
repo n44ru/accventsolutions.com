@@ -1,0 +1,56 @@
+<?php
+
+namespace AppBundle\Entity;
+
+use Doctrine\ORM\Mapping as ORM;
+
+/**
+ * Ayudadetalles
+ *
+ * @ORM\Table(name="ayudadetalles", uniqueConstraints={@ORM\UniqueConstraint(name="id", columns={"id"})}, indexes={@ORM\Index(name="FKAyudaDetal650739", columns={"AyudaProductosid"})})
+ * @ORM\Entity
+ */
+class Ayudadetalles
+{
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="detalles", type="string", length=255, nullable=true)
+     */
+    private $detalles;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="imagen", type="string", length=255, nullable=true)
+     */
+    private $imagen;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="video", type="string", length=255, nullable=true)
+     */
+    private $video;
+
+    /**
+     * @var integer
+     *
+     * @ORM\Column(name="id", type="integer")
+     * @ORM\Id
+     * @ORM\GeneratedValue(strategy="IDENTITY")
+     */
+    private $id;
+
+    /**
+     * @var \AppBundle\Entity\Ayudaproductos
+     *
+     * @ORM\ManyToOne(targetEntity="AppBundle\Entity\Ayudaproductos")
+     * @ORM\JoinColumns({
+     *   @ORM\JoinColumn(name="AyudaProductosid", referencedColumnName="id")
+     * })
+     */
+    private $ayudaproductosid;
+
+
+}

@@ -1,0 +1,202 @@
+<?php
+
+namespace AppBundle\Entity;
+
+use Doctrine\ORM\Mapping as ORM;
+
+/**
+ * Productos
+ *
+ * @ORM\Table(name="productos", uniqueConstraints={@ORM\UniqueConstraint(name="SKU", columns={"SKU"}), @ORM\UniqueConstraint(name="id", columns={"id"})}, indexes={@ORM\Index(name="FKProductos988591", columns={"Subcategoriaid"}), @ORM\Index(name="FKProductos807247", columns={"Categoriaid"}), @ORM\Index(name="FKProductos51036", columns={"Marcaid"})})
+ * @ORM\Entity
+ */
+class Productos
+{
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="SKU", type="string", length=150, nullable=false)
+     */
+    private $sku;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="MPN", type="string", length=150, nullable=true)
+     */
+    private $mpn;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="nombre", type="string", length=100, nullable=true)
+     */
+    private $nombre;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="linkproducto", type="string", length=255, nullable=false)
+     */
+    private $linkproducto;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="descripcion", type="string", length=255, nullable=true)
+     */
+    private $descripcion;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="atributos", type="string", length=255, nullable=true)
+     */
+    private $atributos;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="imagen", type="string", length=150, nullable=true)
+     */
+    private $imagen;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="linkimagen", type="string", length=255, nullable=true)
+     */
+    private $linkimagen;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="precio", type="string", length=100, nullable=true)
+     */
+    private $precio;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="imagen2", type="string", length=255, nullable=true)
+     */
+    private $imagen2;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="imagen3", type="string", length=255, nullable=true)
+     */
+    private $imagen3;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="imagen4", type="string", length=255, nullable=true)
+     */
+    private $imagen4;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="pdf1", type="string", length=255, nullable=true)
+     */
+    private $pdf1;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="pdf2", type="string", length=255, nullable=true)
+     */
+    private $pdf2;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="pdf3", type="string", length=255, nullable=true)
+     */
+    private $pdf3;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="driver1", type="string", length=255, nullable=true)
+     */
+    private $driver1;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="driver2", type="string", length=255, nullable=true)
+     */
+    private $driver2;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="driver3", type="string", length=255, nullable=true)
+     */
+    private $driver3;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="comentarios", type="string", length=255, nullable=true)
+     */
+    private $comentarios;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="imagen5", type="string", length=255, nullable=true)
+     */
+    private $imagen5;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="imagen6", type="string", length=255, nullable=true)
+     */
+    private $imagen6;
+
+    /**
+     * @var integer
+     *
+     * @ORM\Column(name="id", type="integer")
+     * @ORM\Id
+     * @ORM\GeneratedValue(strategy="IDENTITY")
+     */
+    private $id;
+
+    /**
+     * @var \AppBundle\Entity\Subcategoria
+     *
+     * @ORM\ManyToOne(targetEntity="AppBundle\Entity\Subcategoria")
+     * @ORM\JoinColumns({
+     *   @ORM\JoinColumn(name="Subcategoriaid", referencedColumnName="id")
+     * })
+     */
+    private $subcategoriaid;
+
+    /**
+     * @var \AppBundle\Entity\Categoria
+     *
+     * @ORM\ManyToOne(targetEntity="AppBundle\Entity\Categoria")
+     * @ORM\JoinColumns({
+     *   @ORM\JoinColumn(name="Categoriaid", referencedColumnName="id")
+     * })
+     */
+    private $categoriaid;
+
+    /**
+     * @var \AppBundle\Entity\Marca
+     *
+     * @ORM\ManyToOne(targetEntity="AppBundle\Entity\Marca")
+     * @ORM\JoinColumns({
+     *   @ORM\JoinColumn(name="Marcaid", referencedColumnName="id")
+     * })
+     */
+    private $marcaid;
+
+
+}

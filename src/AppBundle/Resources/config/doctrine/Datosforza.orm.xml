@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<doctrine-mapping xmlns="http://doctrine-project.org/schemas/orm/doctrine-mapping" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://doctrine-project.org/schemas/orm/doctrine-mapping http://doctrine-project.org/schemas/orm/doctrine-mapping.xsd">
+  <entity name="AppBundle\Entity\Datosforza" table="datosforza">
+    <indexes>
+      <index name="FKDatosForza402103" columns="Productosid"/>
+    </indexes>
+    <unique-constraints>
+      <unique-constraint name="id" columns="id"/>
+      <unique-constraint name="f14" columns="f14"/>
+    </unique-constraints>
+    <id name="id" type="integer" column="id">
+      <generator strategy="IDENTITY"/>
+    </id>
+    <field name="f1" type="string" column="f1" length="255" nullable="true"/>
+    <field name="f2" type="string" column="f2" length="255" nullable="true"/>
+    <field name="f3" type="string" column="f3" length="255" nullable="true"/>
+    <field name="f4" type="string" column="f4" length="255" nullable="true"/>
+    <field name="f5" type="string" column="f5" length="255" nullable="true"/>
+    <field name="f6" type="string" column="f6" length="255" nullable="true"/>
+    <field name="f7" type="string" column="f7" length="255" nullable="true"/>
+    <field name="f8" type="string" column="f8" length="255" nullable="true"/>
+    <field name="f9" type="string" column="f9" length="255" nullable="true"/>
+    <field name="f10" type="string" column="f10" length="255" nullable="true"/>
+    <field name="f11" type="string" column="f11" length="255" nullable="true"/>
+    <field name="f12" type="string" column="f12" length="255" nullable="true"/>
+    <field name="f13" type="string" column="f13" length="255" nullable="true"/>
+    <field name="f14" type="string" column="f14" length="255" nullable="true"/>
+    <field name="f15" type="string" column="f15" length="255" nullable="true"/>
+    <field name="f16" type="string" column="f16" length="255" nullable="true"/>
+    <field name="f17" type="string" column="f17" length="255" nullable="true"/>
+    <field name="f18" type="string" column="f18" length="255" nullable="true"/>
+    <field name="f19" type="string" column="f19" length="255" nullable="true"/>
+    <field name="f20" type="string" column="f20" length="255" nullable="true"/>
+    <field name="f21" type="string" column="f21" length="255" nullable="true"/>
+    <field name="f22" type="string" column="f22" length="255" nullable="true"/>
+    <field name="f23" type="string" column="f23" length="255" nullable="true"/>
+    <field name="f24" type="string" column="f24" length="255" nullable="true"/>
+    <field name="f25" type="string" column="f25" length="255" nullable="true"/>
+    <field name="f26" type="string" column="f26" length="255" nullable="true"/>
+    <field name="f27" type="string" column="f27" length="255" nullable="true"/>
+    <field name="f28" type="string" column="f28" length="255" nullable="true"/>
+    <field name="f29" type="string" column="f29" length="255" nullable="true"/>
+    <field name="f30" type="string" column="f30" length="255" nullable="true"/>
+    <field name="f31" type="string" column="f31" length="255" nullable="true"/>
+    <field name="f32" type="string" column="f32" length="255" nullable="true"/>
+    <field name="f33" type="string" column="f33" length="255" nullable="true"/>
+    <field name="f34" type="string" column="f34" length="255" nullable="true"/>
+    <field name="f35" type="string" column="f35" length="255" nullable="true"/>
+    <field name="f36" type="string" column="f36" length="255" nullable="true"/>
+    <field name="f37" type="string" column="f37" length="255" nullable="true"/>
+    <field name="f38" type="string" column="f38" length="255" nullable="true"/>
+    <field name="f39" type="string" column="f39" length="255" nullable="true"/>
+    <field name="f40" type="string" column="f40" length="255" nullable="true"/>
+    <field name="f41" type="string" column="f41" length="255" nullable="true"/>
+    <field name="f42" type="string" column="f42" length="255" nullable="true"/>
+    <field name="f43" type="string" column="f43" length="255" nullable="true"/>
+    <field name="f44" type="string" column="f44" length="255" nullable="true"/>
+    <field name="f45" type="string" column="f45" length="255" nullable="true"/>
+    <field name="f46" type="string" column="f46" length="255" nullable="true"/>
+    <field name="f47" type="string" column="f47" length="255" nullable="true"/>
+    <field name="f48" type="string" column="f48" length="255" nullable="true"/>
+    <field name="f49" type="string" column="f49" length="255" nullable="true"/>
+    <field name="f50" type="string" column="f50" length="255" nullable="true"/>
+    <field name="f51" type="string" column="f51" length="255" nullable="true"/>
+    <field name="f52" type="string" column="f52" length="255" nullable="true"/>
+    <field name="f53" type="string" column="f53" length="255" nullable="true"/>
+    <field name="f54" type="string" column="f54" length="255" nullable="true"/>
+    <field name="f55" type="string" column="f55" length="255" nullable="true"/>
+    <field name="f56" type="string" column="f56" length="255" nullable="true"/>
+    <field name="f57" type="string" column="f57" length="255" nullable="true"/>
+    <field name="f58" type="string" column="f58" length="255" nullable="true"/>
+    <field name="f59" type="string" column="f59" length="255" nullable="true"/>
+    <field name="f60" type="string" column="f60" length="255" nullable="true"/>
+    <many-to-one field="productosid" target-entity="Productos">
+      <join-columns>
+        <join-column name="Productosid" referenced-column-name="id"/>
+      </join-columns>
+    </many-to-one>
+  </entity>
+</doctrine-mapping>

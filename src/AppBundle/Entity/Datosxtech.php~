@@ -1,0 +1,602 @@
+<?php
+
+namespace AppBundle\Entity;
+
+use Doctrine\ORM\Mapping as ORM;
+
+/**
+ * Datosxtech
+ *
+ * @ORM\Table(name="datosxtech", uniqueConstraints={@ORM\UniqueConstraint(name="id", columns={"id"})}, indexes={@ORM\Index(name="FKDatosXtech161254", columns={"Productosid"})})
+ * @ORM\Entity
+ */
+class Datosxtech
+{
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="x1", type="string", length=255, nullable=true)
+     */
+    private $x1;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="x2", type="string", length=255, nullable=true)
+     */
+    private $x2;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="x3", type="string", length=255, nullable=true)
+     */
+    private $x3;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="x4", type="string", length=255, nullable=true)
+     */
+    private $x4;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="x5", type="string", length=255, nullable=true)
+     */
+    private $x5;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="x6", type="string", length=255, nullable=true)
+     */
+    private $x6;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="x7", type="string", length=255, nullable=true)
+     */
+    private $x7;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="x8", type="string", length=255, nullable=true)
+     */
+    private $x8;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="x9", type="string", length=255, nullable=true)
+     */
+    private $x9;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="x10", type="string", length=255, nullable=true)
+     */
+    private $x10;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="x11", type="string", length=255, nullable=true)
+     */
+    private $x11;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="x12", type="string", length=255, nullable=true)
+     */
+    private $x12;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="x13", type="string", length=255, nullable=true)
+     */
+    private $x13;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="x14", type="string", length=255, nullable=true)
+     */
+    private $x14;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="x15", type="string", length=255, nullable=true)
+     */
+    private $x15;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="x16", type="string", length=255, nullable=true)
+     */
+    private $x16;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="x17", type="string", length=255, nullable=true)
+     */
+    private $x17;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="x18", type="string", length=255, nullable=true)
+     */
+    private $x18;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="x19", type="string", length=255, nullable=true)
+     */
+    private $x19;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="x20", type="string", length=255, nullable=true)
+     */
+    private $x20;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="x21", type="string", length=255, nullable=true)
+     */
+    private $x21;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="x22", type="string", length=255, nullable=true)
+     */
+    private $x22;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="x23", type="string", length=255, nullable=true)
+     */
+    private $x23;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="x24", type="string", length=255, nullable=true)
+     */
+    private $x24;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="x25", type="string", length=255, nullable=true)
+     */
+    private $x25;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="x26", type="string", length=255, nullable=true)
+     */
+    private $x26;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="x27", type="string", length=255, nullable=true)
+     */
+    private $x27;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="x28", type="string", length=255, nullable=true)
+     */
+    private $x28;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="x29", type="string", length=255, nullable=true)
+     */
+    private $x29;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="x30", type="string", length=255, nullable=true)
+     */
+    private $x30;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="x31", type="string", length=255, nullable=true)
+     */
+    private $x31;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="x32", type="string", length=255, nullable=true)
+     */
+    private $x32;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="x33", type="string", length=255, nullable=true)
+     */
+    private $x33;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="x34", type="string", length=255, nullable=true)
+     */
+    private $x34;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="x35", type="string", length=255, nullable=true)
+     */
+    private $x35;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="x36", type="string", length=255, nullable=true)
+     */
+    private $x36;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="x37", type="string", length=255, nullable=true)
+     */
+    private $x37;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="x38", type="string", length=255, nullable=true)
+     */
+    private $x38;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="x39", type="string", length=255, nullable=true)
+     */
+    private $x39;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="x40", type="string", length=255, nullable=true)
+     */
+    private $x40;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="x41", type="string", length=255, nullable=true)
+     */
+    private $x41;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="x42", type="string", length=255, nullable=true)
+     */
+    private $x42;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="x43", type="string", length=255, nullable=true)
+     */
+    private $x43;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="x44", type="string", length=255, nullable=true)
+     */
+    private $x44;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="x45", type="string", length=255, nullable=true)
+     */
+    private $x45;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="x46", type="string", length=255, nullable=true)
+     */
+    private $x46;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="x47", type="string", length=255, nullable=true)
+     */
+    private $x47;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="x48", type="string", length=255, nullable=true)
+     */
+    private $x48;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="x49", type="string", length=255, nullable=true)
+     */
+    private $x49;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="x50", type="string", length=255, nullable=true)
+     */
+    private $x50;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="x51", type="string", length=255, nullable=true)
+     */
+    private $x51;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="x52", type="string", length=255, nullable=true)
+     */
+    private $x52;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="x53", type="string", length=255, nullable=true)
+     */
+    private $x53;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="x54", type="string", length=255, nullable=true)
+     */
+    private $x54;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="x55", type="string", length=255, nullable=true)
+     */
+    private $x55;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="x56", type="string", length=255, nullable=true)
+     */
+    private $x56;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="x57", type="string", length=255, nullable=true)
+     */
+    private $x57;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="x58", type="string", length=255, nullable=true)
+     */
+    private $x58;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="x59", type="string", length=255, nullable=true)
+     */
+    private $x59;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="x60", type="string", length=255, nullable=true)
+     */
+    private $x60;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="x61", type="string", length=255, nullable=true)
+     */
+    private $x61;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="x62", type="string", length=255, nullable=true)
+     */
+    private $x62;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="x63", type="string", length=255, nullable=true)
+     */
+    private $x63;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="x64", type="string", length=255, nullable=true)
+     */
+    private $x64;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="x65", type="string", length=255, nullable=true)
+     */
+    private $x65;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="x66", type="string", length=255, nullable=true)
+     */
+    private $x66;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="x67", type="string", length=255, nullable=true)
+     */
+    private $x67;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="x68", type="string", length=255, nullable=true)
+     */
+    private $x68;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="x69", type="string", length=255, nullable=true)
+     */
+    private $x69;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="x70", type="string", length=255, nullable=true)
+     */
+    private $x70;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="x71", type="string", length=255, nullable=true)
+     */
+    private $x71;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="x72", type="string", length=255, nullable=true)
+     */
+    private $x72;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="x73", type="string", length=255, nullable=true)
+     */
+    private $x73;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="x74", type="string", length=255, nullable=true)
+     */
+    private $x74;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="x75", type="string", length=255, nullable=true)
+     */
+    private $x75;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="x76", type="string", length=255, nullable=true)
+     */
+    private $x76;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="x77", type="string", length=255, nullable=true)
+     */
+    private $x77;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="x78", type="string", length=255, nullable=true)
+     */
+    private $x78;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="x79", type="string", length=255, nullable=true)
+     */
+    private $x79;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="x80", type="string", length=255, nullable=true)
+     */
+    private $x80;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="x81", type="string", length=255, nullable=true)
+     */
+    private $x81;
+
+    /**
+     * @var integer
+     *
+     * @ORM\Column(name="id", type="integer")
+     * @ORM\Id
+     * @ORM\GeneratedValue(strategy="IDENTITY")
+     */
+    private $id;
+
+    /**
+     * @var \AppBundle\Entity\Productos
+     *
+     * @ORM\ManyToOne(targetEntity="AppBundle\Entity\Productos")
+     * @ORM\JoinColumns({
+     *   @ORM\JoinColumn(name="Productosid", referencedColumnName="id")
+     * })
+     */
+    private $productosid;
+
+
+}

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<doctrine-mapping xmlns="http://doctrine-project.org/schemas/orm/doctrine-mapping" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://doctrine-project.org/schemas/orm/doctrine-mapping http://doctrine-project.org/schemas/orm/doctrine-mapping.xsd">
+  <entity name="AppBundle\Entity\Ayudaproductos" table="ayudaproductos">
+    <indexes>
+      <index name="FKAyudaProdu908102" columns="Productosid"/>
+    </indexes>
+    <unique-constraints>
+      <unique-constraint name="id" columns="id"/>
+    </unique-constraints>
+    <id name="id" type="integer" column="id">
+      <generator strategy="IDENTITY"/>
+    </id>
+    <field name="sistemas" type="string" column="sistemas" length="150" nullable="true"/>
+    <field name="tipodeproblema" type="string" column="tipodeproblema" length="255" nullable="true"/>
+    <field name="pdf" type="string" column="pdf" length="255" nullable="true"/>
+    <field name="pdf2" type="string" column="pdf2" length="255" nullable="true"/>
+    <field name="pdf3" type="string" column="pdf3" length="255" nullable="true"/>
+    <field name="drivers" type="string" column="drivers" length="255" nullable="true"/>
+    <field name="drivers2" type="string" column="drivers2" length="255" nullable="true"/>
+    <field name="drivers3" type="string" column="drivers3" length="255" nullable="true"/>
+    <field name="comentarios" type="string" column="comentarios" length="255" nullable="true"/>
+    <many-to-one field="productosid" target-entity="Productos">
+      <join-columns>
+        <join-column name="Productosid" referenced-column-name="id"/>
+      </join-columns>
+    </many-to-one>
+  </entity>
+</doctrine-mapping>

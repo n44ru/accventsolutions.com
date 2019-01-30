@@ -1,0 +1,98 @@
+<?php
+
+namespace AppBundle\Entity;
+
+use Doctrine\ORM\Mapping as ORM;
+
+/**
+ * Ayudaproductos
+ *
+ * @ORM\Table(name="ayudaproductos", uniqueConstraints={@ORM\UniqueConstraint(name="id", columns={"id"})}, indexes={@ORM\Index(name="FKAyudaProdu908102", columns={"Productosid"})})
+ * @ORM\Entity
+ */
+class Ayudaproductos
+{
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="sistemas", type="string", length=150, nullable=true)
+     */
+    private $sistemas;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="tipodeproblema", type="string", length=255, nullable=true)
+     */
+    private $tipodeproblema;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="pdf", type="string", length=255, nullable=true)
+     */
+    private $pdf;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="pdf2", type="string", length=255, nullable=true)
+     */
+    private $pdf2;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="pdf3", type="string", length=255, nullable=true)
+     */
+    private $pdf3;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="drivers", type="string", length=255, nullable=true)
+     */
+    private $drivers;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="drivers2", type="string", length=255, nullable=true)
+     */
+    private $drivers2;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="drivers3", type="string", length=255, nullable=true)
+     */
+    private $drivers3;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="comentarios", type="string", length=255, nullable=true)
+     */
+    private $comentarios;
+
+    /**
+     * @var integer
+     *
+     * @ORM\Column(name="id", type="integer")
+     * @ORM\Id
+     * @ORM\GeneratedValue(strategy="IDENTITY")
+     */
+    private $id;
+
+    /**
+     * @var \AppBundle\Entity\Productos
+     *
+     * @ORM\ManyToOne(targetEntity="AppBundle\Entity\Productos")
+     * @ORM\JoinColumns({
+     *   @ORM\JoinColumn(name="Productosid", referencedColumnName="id")
+     * })
+     */
+    private $productosid;
+
+
+}

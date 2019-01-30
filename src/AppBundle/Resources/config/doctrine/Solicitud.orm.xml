@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<doctrine-mapping xmlns="http://doctrine-project.org/schemas/orm/doctrine-mapping" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://doctrine-project.org/schemas/orm/doctrine-mapping http://doctrine-project.org/schemas/orm/doctrine-mapping.xsd">
+  <entity name="AppBundle\Entity\Solicitud" table="solicitud">
+    <indexes>
+      <index name="FKSolicitud78267" columns="Userid"/>
+      <index name="FKSolicitud631315" columns="Productosid"/>
+    </indexes>
+    <id name="id" type="integer" column="id">
+      <generator strategy="IDENTITY"/>
+    </id>
+    <field name="titulo" type="string" column="titulo" length="255" nullable="true"/>
+    <field name="mensaje" type="string" column="mensaje" length="255" nullable="true"/>
+    <field name="procesada" type="string" column="Procesada" length="2" nullable="false"/>
+    <many-to-one field="userid" target-entity="User">
+      <join-columns>
+        <join-column name="Userid" referenced-column-name="id"/>
+      </join-columns>
+    </many-to-one>
+    <many-to-one field="productosid" target-entity="Productos">
+      <join-columns>
+        <join-column name="Productosid" referenced-column-name="id"/>
+      </join-columns>
+    </many-to-one>
+  </entity>
+</doctrine-mapping>

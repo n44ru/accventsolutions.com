@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<doctrine-mapping xmlns="http://doctrine-project.org/schemas/orm/doctrine-mapping" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://doctrine-project.org/schemas/orm/doctrine-mapping http://doctrine-project.org/schemas/orm/doctrine-mapping.xsd">
+  <entity name="AppBundle\Entity\Marca" table="marca">
+    <unique-constraints>
+      <unique-constraint name="id" columns="id"/>
+    </unique-constraints>
+    <id name="id" type="integer" column="id">
+      <generator strategy="IDENTITY"/>
+    </id>
+    <field name="detalles" type="string" column="detalles" length="255" nullable="true"/>
+    <field name="nombre" type="string" column="nombre" length="100" nullable="true"/>
+    <field name="marca" type="string" column="marca" length="100" nullable="true"/>
+    <field name="slogan" type="string" column="slogan" length="255" nullable="true"/>
+    <field name="logo" type="string" column="logo" length="150" nullable="true"/>
+    <field name="sitioweb" type="string" column="sitioweb" length="255" nullable="true"/>
+  </entity>
+</doctrine-mapping>

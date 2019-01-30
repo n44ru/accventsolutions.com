@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<doctrine-mapping xmlns="http://doctrine-project.org/schemas/orm/doctrine-mapping" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://doctrine-project.org/schemas/orm/doctrine-mapping http://doctrine-project.org/schemas/orm/doctrine-mapping.xsd">
+  <entity name="AppBundle\Entity\Datosklip" table="datosklip">
+    <indexes>
+      <index name="FKDatosKlip122292" columns="Productosid"/>
+    </indexes>
+    <unique-constraints>
+      <unique-constraint name="id" columns="id"/>
+    </unique-constraints>
+    <id name="id" type="integer" column="id">
+      <generator strategy="IDENTITY"/>
+    </id>
+    <field name="k1" type="string" column="k1" length="255" nullable="true"/>
+    <field name="k2" type="string" column="k2" length="255" nullable="true"/>
+    <field name="k3" type="string" column="k3" length="255" nullable="true"/>
+    <field name="k4" type="string" column="k4" length="255" nullable="true"/>
+    <field name="k5" type="string" column="k5" length="255" nullable="true"/>
+    <field name="k6" type="string" column="k6" length="255" nullable="true"/>
+    <field name="k7" type="string" column="k7" length="255" nullable="true"/>
+    <field name="k8" type="string" column="k8" length="255" nullable="true"/>
+    <field name="k9" type="string" column="k9" length="255" nullable="true"/>
+    <field name="k10" type="string" column="k10" length="255" nullable="true"/>
+    <field name="k11" type="string" column="k11" length="255" nullable="true"/>
+    <field name="k12" type="string" column="k12" length="255" nullable="true"/>
+    <field name="k13" type="string" column="k13" length="255" nullable="true"/>
+    <field name="k14" type="string" column="k14" length="255" nullable="true"/>
+    <field name="k15" type="string" column="k15" length="255" nullable="true"/>
+    <field name="k16" type="string" column="k16" length="255" nullable="true"/>
+    <field name="k17" type="string" column="k17" length="255" nullable="true"/>
+    <field name="k18" type="string" column="k18" length="255" nullable="true"/>
+    <field name="k19" type="string" column="k19" length="255" nullable="true"/>
+    <field name="k20" type="string" column="k20" length="255" nullable="true"/>
+    <field name="k21" type="string" column="k21" length="255" nullable="true"/>
+    <field name="k22" type="string" column="k22" length="255" nullable="true"/>
+    <field name="k23" type="string" column="k23" length="255" nullable="true"/>
+    <field name="k24" type="string" column="k24" length="255" nullable="true"/>
+    <field name="k25" type="string" column="k25" length="255" nullable="true"/>
+    <field name="k26" type="string" column="k26" length="255" nullable="true"/>
+    <field name="k27" type="string" column="k27" length="255" nullable="true"/>
+    <field name="k28" type="string" column="k28" length="255" nullable="true"/>
+    <field name="k29" type="string" column="k29" length="255" nullable="true"/>
+    <field name="k30" type="string" column="k30" length="255" nullable="true"/>
+    <many-to-one field="productosid" target-entity="Productos">
+      <join-columns>
+        <join-column name="Productosid" referenced-column-name="id"/>
+      </join-columns>
+    </many-to-one>
+  </entity>
+</doctrine-mapping>

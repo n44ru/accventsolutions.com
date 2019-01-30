@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<doctrine-mapping xmlns="http://doctrine-project.org/schemas/orm/doctrine-mapping" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://doctrine-project.org/schemas/orm/doctrine-mapping http://doctrine-project.org/schemas/orm/doctrine-mapping.xsd">
+  <entity name="AppBundle\Entity\Datosxtech" table="datosxtech">
+    <indexes>
+      <index name="FKDatosXtech161254" columns="Productosid"/>
+    </indexes>
+    <unique-constraints>
+      <unique-constraint name="id" columns="id"/>
+    </unique-constraints>
+    <id name="id" type="integer" column="id">
+      <generator strategy="IDENTITY"/>
+    </id>
+    <field name="x1" type="string" column="x1" length="255" nullable="true"/>
+    <field name="x2" type="string" column="x2" length="255" nullable="true"/>
+    <field name="x3" type="string" column="x3" length="255" nullable="true"/>
+    <field name="x4" type="string" column="x4" length="255" nullable="true"/>
+    <field name="x5" type="string" column="x5" length="255" nullable="true"/>
+    <field name="x6" type="string" column="x6" length="255" nullable="true"/>
+    <field name="x7" type="string" column="x7" length="255" nullable="true"/>
+    <field name="x8" type="string" column="x8" length="255" nullable="true"/>
+    <field name="x9" type="string" column="x9" length="255" nullable="true"/>
+    <field name="x10" type="string" column="x10" length="255" nullable="true"/>
+    <field name="x11" type="string" column="x11" length="255" nullable="true"/>
+    <field name="x12" type="string" column="x12" length="255" nullable="true"/>
+    <field name="x13" type="string" column="x13" length="255" nullable="true"/>
+    <field name="x14" type="string" column="x14" length="255" nullable="true"/>
+    <field name="x15" type="string" column="x15" length="255" nullable="true"/>
+    <field name="x16" type="string" column="x16" length="255" nullable="true"/>
+    <field name="x17" type="string" column="x17" length="255" nullable="true"/>
+    <field name="x18" type="string" column="x18" length="255" nullable="true"/>
+    <field name="x19" type="string" column="x19" length="255" nullable="true"/>
+    <field name="x20" type="string" column="x20" length="255" nullable="true"/>
+    <field name="x21" type="string" column="x21" length="255" nullable="true"/>
+    <field name="x22" type="string" column="x22" length="255" nullable="true"/>
+    <field name="x23" type="string" column="x23" length="255" nullable="true"/>
+    <field name="x24" type="string" column="x24" length="255" nullable="true"/>
+    <field name="x25" type="string" column="x25" length="255" nullable="true"/>
+    <field name="x26" type="string" column="x26" length="255" nullable="true"/>
+    <field name="x27" type="string" column="x27" length="255" nullable="true"/>
+    <field name="x28" type="string" column="x28" length="255" nullable="true"/>
+    <field name="x29" type="string" column="x29" length="255" nullable="true"/>
+    <field name="x30" type="string" column="x30" length="255" nullable="true"/>
+    <field name="x31" type="string" column="x31" length="255" nullable="true"/>
+    <field name="x32" type="string" column="x32" length="255" nullable="true"/>
+    <field name="x33" type="string" column="x33" length="255" nullable="true"/>
+    <field name="x34" type="string" column="x34" length="255" nullable="true"/>
+    <field name="x35" type="string" column="x35" length="255" nullable="true"/>
+    <field name="x36" type="string" column="x36" length="255" nullable="true"/>
+    <field name="x37" type="string" column="x37" length="255" nullable="true"/>
+    <field name="x38" type="string" column="x38" length="255" nullable="true"/>
+    <field name="x39" type="string" column="x39" length="255" nullable="true"/>
+    <field name="x40" type="string" column="x40" length="255" nullable="true"/>
+    <field name="x41" type="string" column="x41" length="255" nullable="true"/>
+    <field name="x42" type="string" column="x42" length="255" nullable="true"/>
+    <field name="x43" type="string" column="x43" length="255" nullable="true"/>
+    <field name="x44" type="string" column="x44" length="255" nullable="true"/>
+    <field name="x45" type="string" column="x45" length="255" nullable="true"/>
+    <field name="x46" type="string" column="x46" length="255" nullable="true"/>
+    <field name="x47" type="string" column="x47" length="255" nullable="true"/>
+    <field name="x48" type="string" column="x48" length="255" nullable="true"/>
+    <field name="x49" type="string" column="x49" length="255" nullable="true"/>
+    <field name="x50" type="string" column="x50" length="255" nullable="true"/>
+    <field name="x51" type="string" column="x51" length="255" nullable="true"/>
+    <field name="x52" type="string" column="x52" length="255" nullable="true"/>
+    <field name="x53" type="string" column="x53" length="255" nullable="true"/>
+    <field name="x54" type="string" column="x54" length="255" nullable="true"/>
+    <field name="x55" type="string" column="x55" length="255" nullable="true"/>
+    <field name="x56" type="string" column="x56" length="255" nullable="true"/>
+    <field name="x57" type="string" column="x57" length="255" nullable="true"/>
+    <field name="x58" type="string" column="x58" length="255" nullable="true"/>
+    <field name="x59" type="string" column="x59" length="255" nullable="true"/>
+    <field name="x60" type="string" column="x60" length="255" nullable="true"/>
+    <field name="x61" type="string" column="x61" length="255" nullable="true"/>
+    <field name="x62" type="string" column="x62" length="255" nullable="true"/>
+    <field name="x63" type="string" column="x63" length="255" nullable="true"/>
+    <field name="x64" type="string" column="x64" length="255" nullable="true"/>
+    <field name="x65" type="string" column="x65" length="255" nullable="true"/>
+    <field name="x66" type="string" column="x66" length="255" nullable="true"/>
+    <field name="x67" type="string" column="x67" length="255" nullable="true"/>
+    <field name="x68" type="string" column="x68" length="255" nullable="true"/>
+    <field name="x69" type="string" column="x69" length="255" nullable="true"/>
+    <field name="x70" type="string" column="x70" length="255" nullable="true"/>
+    <field name="x71" type="string" column="x71" length="255" nullable="true"/>
+    <field name="x72" type="string" column="x72" length="255" nullable="true"/>
+    <field name="x73" type="string" column="x73" length="255" nullable="true"/>
+    <field name="x74" type="string" column="x74" length="255" nullable="true"/>
+    <field name="x75" type="string" column="x75" length="255" nullable="true"/>
+    <field name="x76" type="string" column="x76" length="255" nullable="true"/>
+    <field name="x77" type="string" column="x77" length="255" nullable="true"/>
+    <field name="x78" type="string" column="x78" length="255" nullable="true"/>
+    <field name="x79" type="string" column="x79" length="255" nullable="true"/>
+    <field name="x80" type="string" column="x80" length="255" nullable="true"/>
+    <field name="x81" type="string" column="x81" length="255" nullable="true"/>
+    <many-to-one field="productosid" target-entity="Productos">
+      <join-columns>
+        <join-column name="Productosid" referenced-column-name="id"/>
+      </join-columns>
+    </many-to-one>
+  </entity>
+</doctrine-mapping>

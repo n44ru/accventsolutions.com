@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<doctrine-mapping xmlns="http://doctrine-project.org/schemas/orm/doctrine-mapping" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://doctrine-project.org/schemas/orm/doctrine-mapping http://doctrine-project.org/schemas/orm/doctrine-mapping.xsd">
+  <entity name="AppBundle\Entity\Productos" table="productos">
+    <indexes>
+      <index name="FKProductos988591" columns="Subcategoriaid"/>
+      <index name="FKProductos807247" columns="Categoriaid"/>
+      <index name="FKProductos51036" columns="Marcaid"/>
+    </indexes>
+    <unique-constraints>
+      <unique-constraint name="SKU" columns="SKU"/>
+      <unique-constraint name="id" columns="id"/>
+    </unique-constraints>
+    <id name="id" type="integer" column="id">
+      <generator strategy="IDENTITY"/>
+    </id>
+    <field name="sku" type="string" column="SKU" length="150" nullable="false"/>
+    <field name="mpn" type="string" column="MPN" length="150" nullable="true"/>
+    <field name="nombre" type="string" column="nombre" length="100" nullable="true"/>
+    <field name="linkproducto" type="string" column="linkproducto" length="255" nullable="false"/>
+    <field name="descripcion" type="string" column="descripcion" length="255" nullable="true"/>
+    <field name="atributos" type="string" column="atributos" length="255" nullable="true"/>
+    <field name="imagen" type="string" column="imagen" length="150" nullable="true"/>
+    <field name="linkimagen" type="string" column="linkimagen" length="255" nullable="true"/>
+    <field name="precio" type="string" column="precio" length="100" nullable="true"/>
+    <field name="imagen2" type="string" column="imagen2" length="255" nullable="true"/>
+    <field name="imagen3" type="string" column="imagen3" length="255" nullable="true"/>
+    <field name="imagen4" type="string" column="imagen4" length="255" nullable="true"/>
+    <field name="pdf1" type="string" column="pdf1" length="255" nullable="true"/>
+    <field name="pdf2" type="string" column="pdf2" length="255" nullable="true"/>
+    <field name="pdf3" type="string" column="pdf3" length="255" nullable="true"/>
+    <field name="driver1" type="string" column="driver1" length="255" nullable="true"/>
+    <field name="driver2" type="string" column="driver2" length="255" nullable="true"/>
+    <field name="driver3" type="string" column="driver3" length="255" nullable="true"/>
+    <field name="comentarios" type="string" column="comentarios" length="255" nullable="true"/>
+    <field name="imagen5" type="string" column="imagen5" length="255" nullable="true"/>
+    <field name="imagen6" type="string" column="imagen6" length="255" nullable="true"/>
+    <many-to-one field="subcategoriaid" target-entity="Subcategoria">
+      <join-columns>
+        <join-column name="Subcategoriaid" referenced-column-name="id"/>
+      </join-columns>
+    </many-to-one>
+    <many-to-one field="categoriaid" target-entity="Categoria">
+      <join-columns>
+        <join-column name="Categoriaid" referenced-column-name="id"/>
+      </join-columns>
+    </many-to-one>
+    <many-to-one field="marcaid" target-entity="Marca">
+      <join-columns>
+        <join-column name="Marcaid" referenced-column-name="id"/>
+      </join-columns>
+    </many-to-one>
+  </entity>
+</doctrine-mapping>

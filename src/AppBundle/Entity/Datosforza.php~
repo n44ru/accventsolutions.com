@@ -1,0 +1,455 @@
+<?php
+
+namespace AppBundle\Entity;
+
+use Doctrine\ORM\Mapping as ORM;
+
+/**
+ * Datosforza
+ *
+ * @ORM\Table(name="datosforza", uniqueConstraints={@ORM\UniqueConstraint(name="id", columns={"id"}), @ORM\UniqueConstraint(name="f14", columns={"f14"})}, indexes={@ORM\Index(name="FKDatosForza402103", columns={"Productosid"})})
+ * @ORM\Entity
+ */
+class Datosforza
+{
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="f1", type="string", length=255, nullable=true)
+     */
+    private $f1;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="f2", type="string", length=255, nullable=true)
+     */
+    private $f2;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="f3", type="string", length=255, nullable=true)
+     */
+    private $f3;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="f4", type="string", length=255, nullable=true)
+     */
+    private $f4;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="f5", type="string", length=255, nullable=true)
+     */
+    private $f5;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="f6", type="string", length=255, nullable=true)
+     */
+    private $f6;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="f7", type="string", length=255, nullable=true)
+     */
+    private $f7;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="f8", type="string", length=255, nullable=true)
+     */
+    private $f8;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="f9", type="string", length=255, nullable=true)
+     */
+    private $f9;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="f10", type="string", length=255, nullable=true)
+     */
+    private $f10;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="f11", type="string", length=255, nullable=true)
+     */
+    private $f11;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="f12", type="string", length=255, nullable=true)
+     */
+    private $f12;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="f13", type="string", length=255, nullable=true)
+     */
+    private $f13;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="f14", type="string", length=255, nullable=true)
+     */
+    private $f14;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="f15", type="string", length=255, nullable=true)
+     */
+    private $f15;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="f16", type="string", length=255, nullable=true)
+     */
+    private $f16;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="f17", type="string", length=255, nullable=true)
+     */
+    private $f17;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="f18", type="string", length=255, nullable=true)
+     */
+    private $f18;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="f19", type="string", length=255, nullable=true)
+     */
+    private $f19;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="f20", type="string", length=255, nullable=true)
+     */
+    private $f20;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="f21", type="string", length=255, nullable=true)
+     */
+    private $f21;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="f22", type="string", length=255, nullable=true)
+     */
+    private $f22;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="f23", type="string", length=255, nullable=true)
+     */
+    private $f23;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="f24", type="string", length=255, nullable=true)
+     */
+    private $f24;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="f25", type="string", length=255, nullable=true)
+     */
+    private $f25;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="f26", type="string", length=255, nullable=true)
+     */
+    private $f26;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="f27", type="string", length=255, nullable=true)
+     */
+    private $f27;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="f28", type="string", length=255, nullable=true)
+     */
+    private $f28;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="f29", type="string", length=255, nullable=true)
+     */
+    private $f29;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="f30", type="string", length=255, nullable=true)
+     */
+    private $f30;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="f31", type="string", length=255, nullable=true)
+     */
+    private $f31;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="f32", type="string", length=255, nullable=true)
+     */
+    private $f32;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="f33", type="string", length=255, nullable=true)
+     */
+    private $f33;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="f34", type="string", length=255, nullable=true)
+     */
+    private $f34;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="f35", type="string", length=255, nullable=true)
+     */
+    private $f35;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="f36", type="string", length=255, nullable=true)
+     */
+    private $f36;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="f37", type="string", length=255, nullable=true)
+     */
+    private $f37;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="f38", type="string", length=255, nullable=true)
+     */
+    private $f38;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="f39", type="string", length=255, nullable=true)
+     */
+    private $f39;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="f40", type="string", length=255, nullable=true)
+     */
+    private $f40;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="f41", type="string", length=255, nullable=true)
+     */
+    private $f41;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="f42", type="string", length=255, nullable=true)
+     */
+    private $f42;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="f43", type="string", length=255, nullable=true)
+     */
+    private $f43;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="f44", type="string", length=255, nullable=true)
+     */
+    private $f44;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="f45", type="string", length=255, nullable=true)
+     */
+    private $f45;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="f46", type="string", length=255, nullable=true)
+     */
+    private $f46;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="f47", type="string", length=255, nullable=true)
+     */
+    private $f47;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="f48", type="string", length=255, nullable=true)
+     */
+    private $f48;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="f49", type="string", length=255, nullable=true)
+     */
+    private $f49;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="f50", type="string", length=255, nullable=true)
+     */
+    private $f50;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="f51", type="string", length=255, nullable=true)
+     */
+    private $f51;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="f52", type="string", length=255, nullable=true)
+     */
+    private $f52;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="f53", type="string", length=255, nullable=true)
+     */
+    private $f53;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="f54", type="string", length=255, nullable=true)
+     */
+    private $f54;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="f55", type="string", length=255, nullable=true)
+     */
+    private $f55;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="f56", type="string", length=255, nullable=true)
+     */
+    private $f56;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="f57", type="string", length=255, nullable=true)
+     */
+    private $f57;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="f58", type="string", length=255, nullable=true)
+     */
+    private $f58;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="f59", type="string", length=255, nullable=true)
+     */
+    private $f59;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="f60", type="string", length=255, nullable=true)
+     */
+    private $f60;
+
+    /**
+     * @var integer
+     *
+     * @ORM\Column(name="id", type="integer")
+     * @ORM\Id
+     * @ORM\GeneratedValue(strategy="IDENTITY")
+     */
+    private $id;
+
+    /**
+     * @var \AppBundle\Entity\Productos
+     *
+     * @ORM\ManyToOne(targetEntity="AppBundle\Entity\Productos")
+     * @ORM\JoinColumns({
+     *   @ORM\JoinColumn(name="Productosid", referencedColumnName="id")
+     * })
+     */
+    private $productosid;
+
+
+}
